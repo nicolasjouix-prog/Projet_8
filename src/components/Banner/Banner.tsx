@@ -1,10 +1,13 @@
-import imageBanner from '../../assets/imageBanner.png'
+interface BannerProps {
+    image: string,
+    text?: string
+}
 
-function Banner() {
+function Banner({ image, text }: BannerProps) {
     return (
         <div>
-        <img src={imageBanner} alt="Chez vous, partout et ailleurs" />
-        <p>Chez vous, partout et ailleurs</p>
+            <img src={image} alt={text} />
+            {text && <p>{text}</p>}
         </div>
     )
 }

@@ -1,4 +1,5 @@
 import Banner from '../../components/Banner/Banner'
+import imageHome from '../../assets/imageHome.png'
 import { useState, useEffect } from 'react'
 import type { Property } from '../../datas/Property'
 import Card from '../../components/Card/Card'
@@ -20,7 +21,7 @@ function Home() {
     return (
         <main>
             <div>
-                <Banner />
+                <Banner image={imageHome} text="Chez vous, partout et ailleurs" />
             </div>
 
             <div>
