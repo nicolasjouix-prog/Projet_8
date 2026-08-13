@@ -1,4 +1,4 @@
-import { useState, useEffect } from 'react'
+import { useState } from 'react'
 
 interface PicturesProps { pictures: string[], title: string }
 
@@ -9,7 +9,7 @@ function Slideshow({ pictures, title }: PicturesProps) {
         <div>
             
             <button onClick={() => setSlideshow(slideshow === 0 ? pictures.length - 1 : slideshow - 1 )}></button>
-            <img src={pictures[slideshow]} alt={title} />     
+            <img src={pictures[slideshow]} alt={title} />
             <button onClick={() => setSlideshow(slideshow === pictures.length -1 ?  0 : slideshow + 1 )}></button>
         </div>
     )

@@ -1,21 +1,21 @@
 import { useState } from 'react'
 import arrowCollapse from '../../assets/arrowCollapse.png'
+import type { ReactNode } from 'react'
 
 interface collapseProps {
     title: string,
-    description: string,
+    children: ReactNode
 }
 
-function Collapse({ title, description }: collapseProps) {
+function Collapse({ title, children }: collapseProps) {
     const [collapse, setCollapse] = useState(false)
     return (
         <li>
             <button onClick={() => setCollapse(!collapse)}>
                 {title}
                 <img src={arrowCollapse} alt={title} />
-
             </button >
-            {collapse && description} // si collapse est true: afficher description
+            {collapse && children}
         </li>
     )
 }

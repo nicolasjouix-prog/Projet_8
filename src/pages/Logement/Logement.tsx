@@ -2,6 +2,7 @@ import { useState, useEffect } from 'react'
 import { useParams } from 'react-router-dom'
 import type { Property } from '../../datas/Property'
 import Slideshow from '../../components/Slideshow/Slideshow'
+import Collapse from '../../components/Collapse/Collapse'
 
 function Logement() {
     const { id } = useParams()
@@ -20,17 +21,26 @@ function Logement() {
 
     return (
         <div>
-            {property && <Slideshow pictures={property.pictures} title={property.title} />} 
+            {property && <Slideshow pictures={property.pictures} title={property.title} />}
             {property && property.title}
             {property && property.location}
             {property && property.tags.map((tag) => { return tag })}
             {property && property.host.name}
-            {property && property.host.picture}
+            {property && <img src={property.host.picture} />}
             {property && property.rating}
-            {property && property.description}
-            {property && property.equipments.map((equipment) => { return equipment })}
 
+            <Collapse title="Description">
+                <p>{property && property.description}
+                </p>
+            </Collapse>
 
+            <Collapse title="Equipements">
+                <ul>
+                    {property && property.equipments.map((equipment) => (
+                        <li>{equipment}</li>
+                    ))}
+                </ul>
+            </Collapse>
         </div>
     )
 
