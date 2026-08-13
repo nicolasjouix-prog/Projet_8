@@ -3,6 +3,7 @@ import imageHome from '../../assets/imageHome.png'
 import { useState, useEffect } from 'react'
 import type { Property } from '../../datas/Property'
 import Card from '../../components/Card/Card'
+import { Link } from 'react-router-dom'
 
 function Home() {
 
@@ -26,11 +27,13 @@ function Home() {
 
             <div>
                 {properties.map(({ id, title, cover }) => (
+                    <Link to={`/Logement/${id}`}>
                     <Card
                         key={id} //* besoin d'une key unique pour chaque élément
                         title={title}
                         cover={cover}
                     />
+                    </Link>
                 ))}
             </div>
         </main>

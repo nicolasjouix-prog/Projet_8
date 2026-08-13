@@ -15,7 +15,7 @@ function Collapse({ title, description }: collapseProps) {
                 <img src={arrowCollapse} alt={title} />
 
             </button >
-            {collapse && description}
+            {collapse && description} // si collapse est true: afficher description
         </li>
     )
 }

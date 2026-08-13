@@ -1,7 +1,9 @@
+import imageFooter from '../../assets/imageFooter.png'
+
 function Footer() {
     return (
         <div>
-            <p>Footer</p>
+            <img src={imageFooter} alt="Kasa copyright tous droit réservé" />
         </div>
     )
 }
