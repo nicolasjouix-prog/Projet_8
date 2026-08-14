@@ -1,10 +1,11 @@
 import imageFooter from '../../assets/imageFooter.png'
+import './Footer.css'
 
 function Footer() {
     return (
-        <div>
+        <footer>
             <img src={imageFooter} alt="Kasa copyright tous droit réservé" />
-        </div>
+        </footer>
     )
 }
 

@@ -1,0 +1,11 @@
+	footer {
+	    display: flex;
+	    align-items: center;
+	    justify-content: center;
+	    width: 100vw;
+	    margin-left: calc(50% - 50vw);
+	}
+
+    footer img {
+        width: 100%;
+    }

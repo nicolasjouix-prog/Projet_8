@@ -4,6 +4,7 @@ import { useState, useEffect } from 'react'
 import type { Property } from '../../datas/Property'
 import Card from '../../components/Card/Card'
 import { Link } from 'react-router-dom'
+import './Home.css'
 
 function Home() {
 
@@ -25,9 +26,9 @@ function Home() {
                 <Banner image={imageHome} text="Chez vous, partout et ailleurs" />
             </div>
 
-            <div>
+            <div className='galerie'>
                 {properties.map(({ id, title, cover }) => (
-                    <Link to={`/Logement/${id}`}>
+                    <Link className='lien-galerie' to={`/Logement/${id}`}>
                     <Card
                         key={id} //* besoin d'une key unique pour chaque élément
                         title={title}

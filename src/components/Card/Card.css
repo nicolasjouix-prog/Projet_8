@@ -1,0 +1,25 @@
+.carte-galerie {
+    display: block;
+    position: relative;
+    width: 100%;
+}
+
+.carte-img {
+    display: block;
+    width: 100%;
+    max-width: 100%;
+    aspect-ratio: 1/1;
+    object-fit: cover;
+    border-radius: 10px;
+}
+
+.carte-title {
+    position: absolute;
+    top: 75%;
+    left: 10px;
+    font-size: clamp(4px, 2vw, 18px);
+    font-weight: bold;
+    color: white;
+    width: 80%;
+    margin: 0;
+}

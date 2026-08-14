@@ -1,3 +1,5 @@
+import './Banner.css'
+
 interface BannerProps {
     image: string,
     text?: string
@@ -5,8 +7,8 @@ interface BannerProps {
 
 function Banner({ image, text }: BannerProps) {
     return (
-        <div>
-            <img src={image} alt={text} />
+        <div className='banner'>
+            <img className='img-banner' src={image} alt={text} />
             {text && <p>{text}</p>}
         </div>
     )
