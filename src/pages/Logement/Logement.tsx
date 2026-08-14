@@ -3,10 +3,11 @@ import { useParams } from 'react-router-dom'
 import type { Property } from '../../datas/Property'
 import Slideshow from '../../components/Slideshow/Slideshow'
 import Collapse from '../../components/Collapse/Collapse'
+import Error from '../../pages/Error/Error'
 
 function Logement() {
     const { id } = useParams()
-    const [property, setProperty] = useState<Property | null>(null)
+    const [property, setProperty] = useState<Property | null>(null) // useState est null (null) et peut contenir Property ou null
     useEffect(() => {
         const fetchProperty = async () => {
             const response = await fetch("http://localhost:8080/api/properties")
@@ -20,6 +21,7 @@ function Logement() {
 
 
     return (
+        property === null ? <Error /> :
         <div>
             {property && <Slideshow pictures={property.pictures} title={property.title} />}
             {property && property.title}
