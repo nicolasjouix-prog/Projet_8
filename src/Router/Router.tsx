@@ -7,35 +7,29 @@ import Layout from '../components/Layout/Layout'
 
 function Router() {
     return (
-        <Routes>
-            <Route path="/" element={
-                <Layout>
+        <Layout>
+            <Routes>
+                <Route path="/" element={
                     <Home />
-                </Layout>
-            }
-            />
+                }
+                />
 
-            <Route path="/About" element={
-                <Layout>
+                <Route path="/About" element={
                     <About />
-                </Layout>
-            }
-            />
+                }
+                />
 
-            <Route path="/Logement/:id" element={
-                <Layout>
+                <Route path="/Logement/:id" element={
                     <Logement />
-                </Layout>                
-            }
-            />
+                }
+                />
 
-            <Route path="*" element={
-                <Layout>
+                <Route path="*" element={
                     <Error />
-                </Layout>
-            }
-            />
-        </Routes>
+                }
+                />
+            </Routes>
+        </Layout>
     )
 }
 

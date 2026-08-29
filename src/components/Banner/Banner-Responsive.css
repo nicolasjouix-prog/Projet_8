@@ -1,0 +1,7 @@
+/*Responsive*/
+
+@media screen and (max-width: 768px) {
+    .img-banner {
+        height: 120px;
+    }
+}

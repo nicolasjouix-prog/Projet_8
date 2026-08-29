@@ -1,4 +1,5 @@
 import './Banner.css'
+import './Banner-Responsive.css'
 
 interface BannerProps {
     image: string,

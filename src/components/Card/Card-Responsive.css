@@ -1,0 +1,7 @@
+/*Responsive*/
+
+@media screen and (max-width: 768px) {
+    .carte-img {
+        margin-bottom: 30px;
+    }
+}

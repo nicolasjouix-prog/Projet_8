@@ -1,0 +1,26 @@
+.carrousel{
+    display: flex;
+    align-items: center;
+    position: relative;
+}
+
+.imgCarrousel {
+    width: 100%;
+    height: 415px;
+    object-fit: cover;
+    border-radius: 25px; 
+}
+
+.buttonCarrouselLeft {
+    position: absolute;
+    background: none;
+    border: none;
+    right: 90%;
+}
+
+.buttonCarrouselRight {
+    position: absolute;
+    background: none;
+    border: none;
+    left: 90%;
+}

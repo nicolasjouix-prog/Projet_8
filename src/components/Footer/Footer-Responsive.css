@@ -1,0 +1,7 @@
+	/*Responsive*/
+
+	@media screen and (max-width: 768px) {
+	    footer img {
+	        content: url('../../assets/footerResponsive.png');
+	    }
+	}

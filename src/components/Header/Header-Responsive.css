@@ -1,0 +1,15 @@
+/*Responsive*/
+
+@media screen and (max-width: 768px) {
+    header {
+        margin-bottom: 30px;
+    }
+
+    header img {
+        width: 145px;
+    }
+
+    a {
+        font-size: 12px;
+    }
+}

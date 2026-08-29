@@ -1,5 +1,6 @@
 import imageFooter from '../../assets/imageFooter.png'
 import './Footer.css'
+import './Footer-Responsive.css'
 
 function Footer() {
     return (

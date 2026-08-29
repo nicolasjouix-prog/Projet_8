@@ -5,6 +5,7 @@ import type { Property } from '../../datas/Property'
 import Card from '../../components/Card/Card'
 import { Link } from 'react-router-dom'
 import './Home.css'
+import './Home-Responsive.css'
 
 function Home() {
 
@@ -17,7 +18,7 @@ function Home() {
             setProperties(data);
         }
         fetchProperties();
-    }, []); //* exécute cet effet au montage du composant
+    }, []);
 
 
     return (

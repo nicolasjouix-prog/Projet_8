@@ -1,12 +1,13 @@
 import Banner from '../../components/Banner/Banner'
 import imageAbout from '../../assets/imageAbout.png'
 import Collapse from '../../components/Collapse/Collapse'
+import './About.css'
 
 function About() {
     return (
         <div>
             <Banner image={imageAbout} />
-            <ul>
+            <ul className='collapseAbout'>
                 <Collapse
                     title="Fiabilité"
                     children="Les annonces postées sur Kasa garantissent une fiabilité totale. Les photos sont conformes aux logements, et toutes les informations sont régulièrement vérifiées par nos équipes."

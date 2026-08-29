@@ -1,4 +1,5 @@
 import './Card.css'
+import './Card-Responsive.css'
 
 interface CardProps { title: string, cover: string }
 

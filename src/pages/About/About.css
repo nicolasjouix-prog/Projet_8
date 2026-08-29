@@ -1,0 +1,9 @@
+.collapseAbout {
+    list-style: none;
+    padding: 0;
+    margin: 50px 100px 50px;
+}
+
+.collapseAbout li {
+    margin-bottom: 30px;
+}
