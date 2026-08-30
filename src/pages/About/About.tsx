@@ -2,6 +2,7 @@ import Banner from '../../components/Banner/Banner'
 import imageAbout from '../../assets/imageAbout.png'
 import Collapse from '../../components/Collapse/Collapse'
 import './About.css'
+import './About-Responsive.css'
 
 function About() {
     return (

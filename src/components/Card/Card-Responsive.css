@@ -3,5 +3,9 @@
 @media screen and (max-width: 768px) {
     .carte-img {
         margin-bottom: 30px;
+        height: 270px;
+    }
+    .carte-title {
+        font-size: 18px;
     }
 }

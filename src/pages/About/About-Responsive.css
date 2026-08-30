@@ -1,0 +1,15 @@
+/*Responsive*/
+
+@media screen and (max-width: 768px) {
+    .collapseAbout {
+        margin: 30px 0px 0px 0px;
+    }
+
+    .collapseAbout li {
+        margin-bottom: 0;
+    }
+
+    .collapseAbout .bannerCollapse {
+        height: 40px;
+    }
+}

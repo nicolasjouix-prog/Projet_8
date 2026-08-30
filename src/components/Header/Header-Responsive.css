@@ -6,10 +6,12 @@
     }
 
     header img {
-        width: 145px;
+        width: 130px;
     }
 
-    a {
+    .ulHeader a {
         font-size: 12px;
+        font-weight: 500;
+        text-transform: uppercase;
     }
 }

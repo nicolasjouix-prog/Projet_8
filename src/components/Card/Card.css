@@ -16,8 +16,8 @@
 
 .carte-title {
     position: absolute;
-    bottom: 10px;
-    left: 10px;
+    bottom: 15px;
+    left: 15px;
     overflow: hidden;
     font-size: clamp(4px, 2vw, 18px);
     font-weight: bold;

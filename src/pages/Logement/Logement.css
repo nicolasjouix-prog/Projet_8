@@ -6,6 +6,8 @@
     display: flex;
     justify-content: space-between;
     margin-top: 30px;
+    margin-bottom: 30px;
+    flex-direction: unset;
 }
 
 .presentationLogement h2 {
@@ -26,12 +28,13 @@
 .presentationHote {
     display: flex;
     align-items: center;
-    width: 150px;
+    width: 188px;
     color: rgba(255, 96, 96, 1);
     font-weight: 500;
     font-size: 18px;
     text-align: right;
     gap: 10px;
+    margin-bottom: 10px;
 }
 
 .presentationHote p {
@@ -43,7 +46,7 @@
     width: 64px;
 }
 
-.tagsRating {
+.hostRating {
     display: flex;
     margin-bottom: 15px;
     justify-content: space-between;

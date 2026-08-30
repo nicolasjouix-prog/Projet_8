@@ -1,0 +1,12 @@
+@media screen and (max-width: 768px) {
+    .imgCarrousel {
+        height: 270px;
+    }
+
+    .buttonCarrouselLeft {
+        width: 24px;
+    }
+
+    .buttonCarrouselRight {
+        width: 24px;
+    }

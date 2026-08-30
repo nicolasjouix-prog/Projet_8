@@ -4,4 +4,7 @@
     .img-banner {
         height: 120px;
     }
+    .banner p {
+        text-shadow: none;
+    }
 }

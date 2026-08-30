@@ -26,39 +26,49 @@ function Logement() {
     return (
         property === null ? <Error /> :
             <div className='presentationLogement'>
+
                 {property && <Slideshow pictures={property.pictures} title={property.title} />}
+
                 <div className='positionLogement'>
                     <div className='leftLogement'>
-                        <h2>{property && property.title}</h2>
-                        <p>{property && property.location}</p>
-                    </div>
-                    <div className='rightLogement'>
-                        <div className='presentationHote'>
-                            <p>{property && property.host.name}</p>
-                            {property && <img className='imgHote' src={property.host.picture} />}
+                        <div className='titleLogement'>
+                            <h2>{property && property.title}</h2>
+                            <p>{property && property.location}</p>
+                        </div>
+
+                        <div className='spaceTags'>
+                            {property && property.tags.map((tag) => {
+                                return <span className="tag">{tag}</span>
+                            })}
                         </div>
                     </div>
-                </div>
 
 
-                <div className="tagsRating">
-                    <div className='spaceTags'>
-                    {property && property.tags.map((tag) => {
-                        return <span className="tag">{tag}</span>
-                    })}
-                    </div>
-                    {property && (
-                        <div className='rating'>
-                            {Array.from({ length: 5 }).map((_, index) => (
-                                <span key={index} className="star">
-                                    {index < property.rating
-                                        ? <img src={starActive} alt="Etoile active" />
-                                        : <img src={starInactive} alt="Etoile inactive" />
-                                    }
-                                </span>
-                            ))}
+                    <div className="hostRating">
+
+                        <div className='rightLogement'>
+
+                            <div className='presentationHote'>
+                                <p>{property && property.host.name}</p>
+                                {property && <img className='imgHote' src={property.host.picture} />}
+                            </div>
+
+                            {property && (
+                                <div className='rating'>
+                                    {Array.from({ length: 5 }).map((_, index) => (
+                                        <span key={index} className="star">
+                                            {index < property.rating
+                                                ? <img src={starActive} alt="Etoile active" />
+                                                : <img src={starInactive} alt="Etoile inactive" />
+                                            }
+                                        </span>
+                                    ))}
+                                </div>
+                            )}
+
                         </div>
-                    )}
+
+                    </div>
                 </div>
 
                 <div className='bottomLogement'>

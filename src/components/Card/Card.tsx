@@ -1,7 +1,10 @@
 import './Card.css'
 import './Card-Responsive.css'
 
-interface CardProps { title: string, cover: string }
+interface CardProps {
+    title: string,
+    cover: string
+}
 
 function Card({ title, cover }: CardProps) {
     return (
