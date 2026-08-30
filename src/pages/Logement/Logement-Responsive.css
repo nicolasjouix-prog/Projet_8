@@ -1,0 +1,57 @@
+/*Responsive*/
+
+@media screen and (max-width: 768px) {
+    .positionLogement {
+        flex-direction: column;
+        margin-top: 15px;
+        margin-bottom: 0;
+    }
+
+    .bottomLogement {
+        display: flex;
+        flex-direction: column;
+        gap: 0;
+    }
+
+    .rightLogement {
+        flex-direction: row-reverse;
+        display: flex;
+        align-items: center;
+        width: 100%;
+        justify-content: space-between;
+        margin: 10px 0px 10px 0px;
+    }
+
+    .presentationHote {
+        margin: 0;
+        width: 130px;
+    }
+
+    .presentationHote p {
+        font-size: 14px;
+        font-weight: 500;
+    }
+
+    .star img {
+        width: 18px;
+    }
+
+    .titleLogement h2 {
+        font-size: 18px;
+    }
+
+    .titleLogement p {
+        font-size: 14px;
+        margin-bottom: 10px;
+    }
+
+    .tag {
+        font-size: 10px;
+        border-radius: 5px;
+        height: 18px;
+    }
+
+    .imgHote {
+        width: 35px;
+    }
+}

@@ -1,0 +1,13 @@
+@media screen and (max-width: 768px) {
+    .bannerCollapse {
+        height: 40px;
+        font-size: 13px;
+    }
+
+    .collapseContent {
+        font-size: 12px;
+    }
+
+
+
+}

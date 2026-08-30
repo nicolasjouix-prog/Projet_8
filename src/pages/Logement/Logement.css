@@ -28,7 +28,7 @@
 .presentationHote {
     display: flex;
     align-items: center;
-    width: 188px;
+    width: 150px;
     color: rgba(255, 96, 96, 1);
     font-weight: 500;
     font-size: 18px;
@@ -100,4 +100,10 @@
 
 .star {
     font-size: 36px;
+}
+
+.rightLogement {
+    display: flex;
+    flex-direction: column;
+    align-items: end;
 }

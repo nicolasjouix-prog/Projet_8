@@ -5,6 +5,7 @@ import Slideshow from '../../components/Slideshow/Slideshow'
 import Collapse from '../../components/Collapse/Collapse'
 import Error from '../../pages/Error/Error'
 import './Logement.css'
+import './Logement-Responsive.css'
 import starActive from '../../assets/star-active.png'
 import starInactive from '../../assets/star-inactive.png'
 

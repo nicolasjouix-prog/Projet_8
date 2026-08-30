@@ -2,6 +2,7 @@ import { useState } from 'react'
 import arrowCollapse from '../../assets/arrowCollapse.png'
 import type { ReactNode } from 'react'
 import './Collapse.css'
+import './Collapse-Responsive.css'
 
 interface collapseProps {
     title: string,
