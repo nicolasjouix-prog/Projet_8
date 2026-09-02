@@ -29,9 +29,8 @@ function Home() {
 
             <div className='galerie'>
                 {properties.map(({ id, title, cover }) => (
-                    <Link className='lien-galerie' to={`/Logement/${id}`}>
-                    <Card
-                        key={id} //* besoin d'une key unique pour chaque élément
+                    <Link key={id} className='lien-galerie' to={`/Logement/${id}`}>
+                    <Card                        
                         title={title}
                         cover={cover}
                     />

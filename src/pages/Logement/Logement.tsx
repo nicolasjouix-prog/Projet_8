@@ -39,7 +39,7 @@ function Logement() {
 
                         <div className='spaceTags'>
                             {property && property.tags.map((tag) => {
-                                return <span className="tag">{tag}</span>
+                                return <span key={tag} className="tag">{tag}</span>
                             })}
                         </div>
                     </div>
@@ -80,7 +80,7 @@ function Logement() {
                     <Collapse title="Equipements">
                         <ul>
                             {property && property.equipments.map((equipment) => (
-                                <li>{equipment}</li>
+                                <li key={equipment}>{equipment}</li>
                             ))}
                         </ul>
                     </Collapse>

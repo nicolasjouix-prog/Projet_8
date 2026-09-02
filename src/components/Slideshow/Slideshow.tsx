@@ -30,9 +30,9 @@ function Slideshow({ pictures, title }: PicturesProps) {
     return (
         <div className='carrousel'>
 
-            <img className='buttonCarrouselLeft' onClick={() => setSlideshow(current => current === 0 ? pictures.length - 1 : current - 1)} src={arrowBack} alt="Image précédente du carrousel" />
+            {pictures.length > 1 && (<img className='buttonCarrouselLeft' onClick={() => setSlideshow(current => current === 0 ? pictures.length - 1 : current - 1)} src={arrowBack} alt="Image précédente du carrousel" />)}
             <img className='imgCarrousel' src={pictures[slideshow]} alt={title} />
-            <img className='buttonCarrouselRight' onClick={() => setSlideshow(current => current === pictures.length - 1 ? 0 : current + 1)} src={arrowForward} alt="Image suivante du carrousel" />
+            {pictures.length > 1 && (<img className='buttonCarrouselRight' onClick={() => setSlideshow(current => current === pictures.length - 1 ? 0 : current + 1)} src={arrowForward} alt="Image suivante du carrousel" />)}
 
         </div>
     )
