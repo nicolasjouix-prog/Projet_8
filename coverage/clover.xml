@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<coverage generated="1788434683327" clover="3.2.0">
+  <project timestamp="1788434683327" name="All files">
+    <metrics statements="4" coveredstatements="4" conditionals="10" coveredconditionals="10" methods="3" coveredmethods="3" elements="17" coveredelements="17" complexity="0" loc="4" ncloc="4" packages="3" files="7" classes="7"/>
+    <package name="assets">
+      <metrics statements="0" coveredstatements="0" conditionals="0" coveredconditionals="0" methods="0" coveredmethods="0"/>
+      <file name="arrowCollapse.png" path="C:\Users\Millenium\Desktop\Formation_QA\Projet_8\location_immobilier\src\assets\arrowCollapse.png">
+        <metrics statements="0" coveredstatements="0" conditionals="0" coveredconditionals="0" methods="0" coveredmethods="0"/>
+      </file>
+    </package>
+    <package name="components.Banner">
+      <metrics statements="1" coveredstatements="1" conditionals="2" coveredconditionals="2" methods="1" coveredmethods="1"/>
+      <file name="Banner-Responsive.css" path="C:\Users\Millenium\Desktop\Formation_QA\Projet_8\location_immobilier\src\components\Banner\Banner-Responsive.css">
+        <metrics statements="0" coveredstatements="0" conditionals="0" coveredconditionals="0" methods="0" coveredmethods="0"/>
+      </file>
+      <file name="Banner.css" path="C:\Users\Millenium\Desktop\Formation_QA\Projet_8\location_immobilier\src\components\Banner\Banner.css">
+        <metrics statements="0" coveredstatements="0" conditionals="0" coveredconditionals="0" methods="0" coveredmethods="0"/>
+      </file>
+      <file name="Banner.tsx" path="C:\Users\Millenium\Desktop\Formation_QA\Projet_8\location_immobilier\src\components\Banner\Banner.tsx">
+        <metrics statements="1" coveredstatements="1" conditionals="2" coveredconditionals="2" methods="1" coveredmethods="1"/>
+        <line num="10" count="2" type="stmt"/>
+      </file>
+    </package>
+    <package name="components.Collapse">
+      <metrics statements="3" coveredstatements="3" conditionals="8" coveredconditionals="8" methods="2" coveredmethods="2"/>
+      <file name="Collapse-Responsive.css" path="C:\Users\Millenium\Desktop\Formation_QA\Projet_8\location_immobilier\src\components\Collapse\Collapse-Responsive.css">
+        <metrics statements="0" coveredstatements="0" conditionals="0" coveredconditionals="0" methods="0" coveredmethods="0"/>
+      </file>
+      <file name="Collapse.css" path="C:\Users\Millenium\Desktop\Formation_QA\Projet_8\location_immobilier\src\components\Collapse\Collapse.css">
+        <metrics statements="0" coveredstatements="0" conditionals="0" coveredconditionals="0" methods="0" coveredmethods="0"/>
+      </file>
+      <file name="Collapse.tsx" path="C:\Users\Millenium\Desktop\Formation_QA\Projet_8\location_immobilier\src\components\Collapse\Collapse.tsx">
+        <metrics statements="3" coveredstatements="3" conditionals="8" coveredconditionals="8" methods="2" coveredmethods="2"/>
+        <line num="13" count="3" type="stmt"/>
+        <line num="14" count="3" type="stmt"/>
+        <line num="19" count="2" type="cond" truecount="2" falsecount="0"/>
+      </file>
+    </package>
+  </project>
+</coverage>
