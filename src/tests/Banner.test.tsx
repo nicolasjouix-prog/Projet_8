@@ -3,7 +3,7 @@
 import '@testing-library/jest-dom/vitest'
 import { it, expect, describe, afterEach } from 'vitest'
 import { render, screen, cleanup } from '@testing-library/react'
-import Banner from './Banner'
+import Banner from '../components/Banner/Banner'
 
 
 describe('Banner component', () => {

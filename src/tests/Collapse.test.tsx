@@ -3,7 +3,7 @@
 import '@testing-library/jest-dom/vitest'
 import { it, expect, afterEach } from 'vitest'
 import { render, screen, fireEvent } from '@testing-library/react'
-import Collapse from './Collapse'
+import Collapse from '../components/Collapse/Collapse'
 import { cleanup } from '@testing-library/react'
 
 it('should render the Collapse component with the correct title, content and open/closed states', () => {
