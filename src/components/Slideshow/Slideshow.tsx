@@ -25,13 +25,18 @@ function Slideshow({ pictures, title }: PicturesProps) {
         }
         window.addEventListener('keydown', handleKeyDown)
         return () => { window.removeEventListener('keydown', handleKeyDown) }
-    }, [])
+    }, [pictures])
 
     return (
         <div className='carrousel'>
 
             {pictures.length > 1 && (<img className='buttonCarrouselLeft' onClick={() => setSlideshow(current => current === 0 ? pictures.length - 1 : current - 1)} src={arrowBack} alt="Image précédente du carrousel" />)}
             <img className='imgCarrousel' src={pictures[slideshow]} alt={title} />
+            {pictures.length > 1 && (
+                <span className='counterCarrousel'>
+                    {slideshow + 1} / {pictures.length}
+                </span>
+            )}
             {pictures.length > 1 && (<img className='buttonCarrouselRight' onClick={() => setSlideshow(current => current === pictures.length - 1 ? 0 : current + 1)} src={arrowForward} alt="Image suivante du carrousel" />)}
 
         </div>

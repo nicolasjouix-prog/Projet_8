@@ -13,13 +13,15 @@ function Collapse({ title, children }: collapseProps) {
     const [collapse, setCollapse] = useState(false)
     return (
         <div>
-            <li className={`listCollapse ${collapse ? 'open' : ''}`}>
-                <div className={`bannerCollapse ${collapse ? 'open' : ''}`}>
-                    {title}
-                    <img className={`arrowIcon ${collapse ? 'open' : ''}`} src={arrowCollapse} alt={title} onClick={() => setCollapse(!collapse)} />
-                </div >
-                <div className={`collapseContent ${collapse ? 'open' : ''}`}>{children}</div>
-            </li>
+            <ul>
+                <li className={`listCollapse ${collapse ? 'open' : ''}`}>
+                    <div className={`bannerCollapse ${collapse ? 'open' : ''}`}>
+                        {title}
+                        <img className={`arrowIcon ${collapse ? 'open' : ''}`} src={arrowCollapse} alt={title} onClick={() => setCollapse(!collapse)} />
+                    </div >
+                    <div className={`collapseContent ${collapse ? 'open' : ''}`}>{children}</div>
+                </li>
+            </ul>
         </div>
     )
 }
