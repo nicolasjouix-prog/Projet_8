@@ -13,7 +13,7 @@ function Collapse({ title, children }: collapseProps) {
     const [collapse, setCollapse] = useState(false)
     return (
         <div>
-            <ul>
+            <ul className='collapseList'>
                 <li className={`listCollapse ${collapse ? 'open' : ''}`}>
                     <div className={`bannerCollapse ${collapse ? 'open' : ''}`}>
                         {title}
